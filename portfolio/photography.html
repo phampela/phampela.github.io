@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography — KM</title>
+  <meta name="description" content="Photography portfolio — portraits, landscapes, and documentary work by KM." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>!function(){var t=localStorage.getItem("as-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"")}();</script>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .photo-count {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: var(--text-soft);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-logo"><a href="index.html" class="logo-mark">AS</a></div>
+    <div class="nav-links">
+      <a href="photography.html" class="nav-link" style="color:var(--text-body);">Photography</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="product.html" class="nav-link">Product Design</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <div class="nav-cta"><a href="about.html#contact" class="btn-ghost">Let's Talk</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="photography.html">Photography</a>
+      <a href="blog.html">Blog</a>
+      <a href="product.html">Product Design</a>
+      <a href="about.html">About</a>
+      <a href="about.html#contact" class="mobile-cta">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-label section-label reveal-up delay-1">Photography</div>
+    <h1 class="reveal-up delay-2">Light is the<br><em>only material.</em></h1>
+    <p class="reveal-up delay-3">Portraits, landscapes, and documentary work exploring the decisive moment, the marginal light, and the space between breaths.</p>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar scroll-reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="portrait">Portrait</button>
+    <button class="filter-btn" data-filter="landscape">Landscape</button>
+    <button class="filter-btn" data-filter="documentary">Documentary</button>
+    <button class="filter-btn" data-filter="editorial">Editorial</button>
+    <span class="photo-count" style="margin-left:auto;">24 photographs</span>
+  </div>
+
+  <!-- PHOTO GRID -->
+  <div class="photo-grid">
+
+    <!-- Portrait 1 - tall -->
+    <div class="photo-item scroll-reveal" data-category="portrait" data-lightbox="1">
+      <svg viewBox="0 0 400 560" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="p1" cx="40%" cy="30%">
+            <stop offset="0%" stop-color="#d4a574"/>
+            <stop offset="50%" stop-color="#6b3d1e"/>
+            <stop offset="100%" stop-color="#0d0804"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="560" fill="#0d0804"/>
+        <ellipse cx="200" cy="220" rx="160" ry="210" fill="url(#p1)" opacity="0.9"/>
+        <ellipse cx="200" cy="195" rx="65" ry="72" fill="#c8865a" opacity="0.85"/>
+        <ellipse cx="200" cy="360" rx="130" ry="150" fill="#7a4020" opacity="0.7"/>
+        <ellipse cx="160" cy="170" rx="90" ry="100" fill="rgba(255,220,180,0.12)"/>
+        <rect x="0" y="480" width="400" height="80" fill="rgba(0,0,0,0.4)"/>
+        <text x="20" y="508" font-family="Georgia" font-size="12" fill="rgba(255,255,255,0.7)" font-style="italic">Joana, Lisbon 2025</text>
+        <text x="20" y="526" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)" letter-spacing="2">PORTRAIT · 35mm</text>
+      </svg>
+      <div class="photo-caption">
+        <h4>Joana</h4><p>Lisbon, 2025</p>
+      </div>
+    </div>
+
+    <!-- Landscape 1 -->
+    <div class="photo-item scroll-reveal" data-category="landscape" data-lightbox="2">
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0a1628"/>
+            <stop offset="60%" stop-color="#c4703a"/>
+            <stop offset="100%" stop-color="#e8a060"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#sky1)"/>
+        <!-- Sun -->
+        <circle cx="200" cy="185" r="30" fill="#ffcc66" opacity="0.9"/>
+        <circle cx="200" cy="185" r="50" fill="rgba(255,200,80,0.2)"/>
+        <!-- Horizon hills -->
+        <ellipse cx="80" cy="280" rx="140" ry="60" fill="#1a1008" opacity="0.9"/>
+        <ellipse cx="320" cy="285" rx="120" ry="55" fill="#1a1008" opacity="0.8"/>
+        <rect x="0" y="260" width="400" height="40" fill="#0d0804"/>
+        <!-- Water reflection -->
+        <rect x="160" y="215" width="80" height="50" fill="rgba(255,200,80,0.3)" transform="skewX(-5)"/>
+        <text x="12" y="290" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.6)" font-style="italic">Alentejo, August</text>
+      </svg>
+      <div class="photo-caption"><h4>Alentejo Dusk</h4><p>Portugal, 2025</p></div>
+    </div>
+
+    <!-- Documentary 1 -->
+    <div class="photo-item scroll-reveal" data-category="documentary" data-lightbox="3">
+      <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="320" fill="#1c1c1c"/>
+        <!-- B&W scene -->
+        <rect x="0" y="180" width="400" height="140" fill="#2a2a2a"/>
+        <!-- Figures silhouette -->
+        <ellipse cx="140" cy="185" rx="18" ry="30" fill="#111"/>
+        <rect x="126" y="210" width="28" height="60" rx="4" fill="#111"/>
+        <ellipse cx="220" cy="180" rx="15" ry="26" fill="#111"/>
+        <rect x="208" y="202" width="24" height="70" rx="3" fill="#111"/>
+        <!-- Market stalls -->
+        <rect x="0" y="140" width="140" height="50" fill="#383838"/>
+        <rect x="250" y="145" width="150" height="45" fill="#353535"/>
+        <!-- Bright patches -->
+        <ellipse cx="190" cy="155" rx="50" ry="30" fill="rgba(255,255,255,0.08)"/>
+        <text x="12" y="308" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.5)" font-style="italic">Sunday Market, Amsterdam</text>
+      </svg>
+      <div class="photo-caption"><h4>Sunday Market</h4><p>Amsterdam, 2026</p></div>
+    </div>
+
+    <!-- Editorial 1 - wide -->
+    <div class="photo-item scroll-reveal" data-category="editorial" data-lightbox="4">
+      <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ed1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f0e8dc"/>
+            <stop offset="100%" stop-color="#d4c4b0"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="250" fill="url(#ed1)"/>
+        <!-- Fashion editorial composition -->
+        <ellipse cx="200" cy="100" rx="55" ry="60" fill="#c4895a" opacity="0.7"/>
+        <rect x="150" y="150" width="100" height="80" rx="4" fill="#a06040" opacity="0.6"/>
+        <!-- Dramatic shadow -->
+        <ellipse cx="200" cy="240" rx="100" ry="15" fill="rgba(0,0,0,0.15)"/>
+        <!-- Geometric overlay -->
+        <rect x="0" y="0" width="80" height="250" fill="rgba(200,160,100,0.1)"/>
+        <rect x="0" y="0" width="400" height="1" fill="rgba(0,0,0,0.15)"/>
+        <text x="12" y="238" font-family="Georgia" font-size="10" fill="rgba(26,26,26,0.5)" font-style="italic">Zara Studio Campaign</text>
+      </svg>
+      <div class="photo-caption"><h4>Studio Campaign</h4><p>Editorial, 2025</p></div>
+    </div>
+
+    <!-- Landscape 2 - tall -->
+    <div class="photo-item scroll-reveal" data-category="landscape" data-lightbox="5">
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ls2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#b8d4e8"/>
+            <stop offset="50%" stop-color="#8aabb8"/>
+            <stop offset="100%" stop-color="#2a3d4a"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#ls2)"/>
+        <!-- Misty mountains -->
+        <polygon points="0,350 100,200 200,300 300,180 400,280 400,500 0,500" fill="#1a2d3a" opacity="0.9"/>
+        <polygon points="0,380 150,270 250,340 400,300 400,500 0,500" fill="#0d1f2d"/>
+        <!-- Mist layers -->
+        <rect x="0" y="300" width="400" height="40" fill="rgba(180,210,230,0.2)"/>
+        <rect x="0" y="330" width="400" height="30" fill="rgba(180,210,230,0.15)"/>
+        <!-- Pine trees -->
+        <polygon points="50,420 60,370 70,420" fill="#0a1520"/>
+        <polygon points="80,415 92,358 104,415" fill="#0a1520"/>
+        <polygon points="300,410 312,355 324,410" fill="#0a1520"/>
+        <text x="12" y="490" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.55)" font-style="italic">Dolomites, Dawn</text>
+      </svg>
+      <div class="photo-caption"><h4>Dolomites</h4><p>Italy, 2025</p></div>
+    </div>
+
+    <!-- Portrait 2 -->
+    <div class="photo-item scroll-reveal" data-category="portrait" data-lightbox="6">
+      <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="p2" cx="50%" cy="35%">
+            <stop offset="0%" stop-color="#e8c8a0"/>
+            <stop offset="70%" stop-color="#8a5030"/>
+            <stop offset="100%" stop-color="#200e06"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="360" fill="#200e06"/>
+        <rect x="0" y="0" width="200" height="360" fill="rgba(255,255,255,0.04)"/>
+        <ellipse cx="200" cy="155" rx="70" ry="78" fill="url(#p2)"/>
+        <ellipse cx="200" cy="290" rx="140" ry="100" fill="#5a2e14" opacity="0.6"/>
+        <ellipse cx="150" cy="125" rx="80" ry="85" fill="rgba(255,220,170,0.1)"/>
+        <text x="12" y="348" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.6)" font-style="italic">Self portrait, studio</text>
+      </svg>
+      <div class="photo-caption"><h4>Self Portrait</h4><p>Studio, 2026</p></div>
+    </div>
+
+    <!-- Documentary 2 -->
+    <div class="photo-item scroll-reveal" data-category="documentary" data-lightbox="7">
+      <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="280" fill="#2c2418"/>
+        <!-- Warm documentary scene -->
+        <ellipse cx="280" cy="120" rx="100" ry="90" fill="rgba(200,160,80,0.25)"/>
+        <!-- Table scene suggestion -->
+        <rect x="60" y="160" width="280" height="3" fill="rgba(200,160,80,0.3)"/>
+        <!-- Coffee cup suggestion -->
+        <ellipse cx="200" cy="158" rx="20" ry="8" fill="#8b6030" opacity="0.8"/>
+        <rect x="182" y="150" width="36" height="16" rx="2" fill="#7a5228" opacity="0.8"/>
+        <!-- Hands -->
+        <ellipse cx="140" cy="162" rx="30" ry="12" fill="#c4895a" opacity="0.7" transform="rotate(-15 140 162)"/>
+        <ellipse cx="260" cy="158" rx="28" ry="11" fill="#c4895a" opacity="0.7" transform="rotate(10 260 158)"/>
+        <text x="12" y="270" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.5)" font-style="italic">Cafe Brasileiro, Porto</text>
+      </svg>
+      <div class="photo-caption"><h4>Café Brasileiro</h4><p>Porto, 2025</p></div>
+    </div>
+
+    <!-- Editorial 2 - tall -->
+    <div class="photo-item scroll-reveal" data-category="editorial" data-lightbox="8">
+      <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ed2" x1="20%" y1="0%" x2="80%" y2="100%">
+            <stop offset="0%" stop-color="#f8f4f0"/>
+            <stop offset="100%" stop-color="#e0d0c0"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="520" fill="url(#ed2)"/>
+        <!-- High key editorial -->
+        <ellipse cx="200" cy="180" rx="80" ry="90" fill="#d4a070" opacity="0.75"/>
+        <rect x="150" y="260" width="100" height="200" rx="8" fill="#a07040" opacity="0.55"/>
+        <!-- Geometric shadow -->
+        <polygon points="0,0 200,0 0,300" fill="rgba(0,0,0,0.04)"/>
+        <!-- White light strike -->
+        <rect x="320" y="0" width="80" height="520" fill="rgba(255,255,255,0.3)"/>
+        <text x="12" y="510" font-family="Georgia" font-size="10" fill="rgba(26,26,26,0.45)" font-style="italic">Vogue NL · March 2026</text>
+      </svg>
+      <div class="photo-caption"><h4>Vogue NL</h4><p>Editorial, 2026</p></div>
+    </div>
+
+    <!-- Landscape 3 -->
+    <div class="photo-item scroll-reveal" data-category="landscape" data-lightbox="9">
+      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ls3" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#e8d4c0"/>
+            <stop offset="40%" stop-color="#c09060"/>
+            <stop offset="100%" stop-color="#8a5828"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="260" fill="url(#ls3)"/>
+        <!-- Desert dunes -->
+        <ellipse cx="100" cy="230" rx="180" ry="80" fill="#a06030" opacity="0.9"/>
+        <ellipse cx="320" cy="240" rx="150" ry="70" fill="#c08050" opacity="0.8"/>
+        <ellipse cx="200" cy="200" rx="280" ry="100" fill="#d4a060" opacity="0.6"/>
+        <!-- Shadow ridge -->
+        <path d="M0 200 Q100 170 200 185 Q300 200 400 175 L400 260 L0 260Z" fill="#6a3818" opacity="0.7"/>
+        <text x="12" y="250" font-family="Georgia" font-size="11" fill="rgba(255,255,255,0.6)" font-style="italic">Sahara, Morocco</text>
+      </svg>
+      <div class="photo-caption"><h4>Sahara</h4><p>Morocco, 2025</p></div>
+    </div>
+
+  </div>
+
+  <!-- SERVICES STRIP -->
+  <section class="section" style="background: var(--bg-deep); color: var(--text-on-deep); padding: 5rem 3rem;">
+    <div class="section-header">
+      <div class="section-label" style="color: var(--gold);">Photography Services</div>
+      <h2 style="color: var(--text-on-deep);">Commissions <em>welcome.</em></h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem;" class="scroll-reveal">
+      <div style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; transition: background 0.4s, border-color 0.4s;">
+        <div class="section-label" style="color: var(--gold);">01</div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--text-on-deep); margin-bottom: 0.75rem;">Portrait Sessions</h3>
+        <p style="font-size: 0.88rem; color: rgba(var(--text-on-deep-rgb, 240,236,230),0.65); line-height: 1.65;">Personal and professional portraits shot with natural and studio light. Full retouching and print-ready files included.</p>
+      </div>
+      <div style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; transition: background 0.4s, border-color 0.4s;">
+        <div class="section-label" style="color: var(--gold);">02</div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--text-on-deep); margin-bottom: 0.75rem;">Editorial & Brand</h3>
+        <p style="font-size: 0.88rem; color: rgba(240,236,230,0.6); line-height: 1.65;">Campaign photography for fashion, lifestyle, and culture brands. Concept development through to final delivery.</p>
+      </div>
+      <div style="padding: 2rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; transition: background 0.4s, border-color 0.4s;">
+        <div class="section-label" style="color: var(--gold);">03</div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--text-on-deep); margin-bottom: 0.75rem;">Documentary</h3>
+        <p style="font-size: 0.88rem; color: rgba(240,236,230,0.6); line-height: 1.65;">Long-form story work, reportage, and event coverage. Available for multi-day projects across Europe.</p>
+      </div>
+    </div>
+    <div style="margin-top: 3rem;">
+      <a href="about.html#contact" class="btn-primary" style="background: var(--gold); border-color: var(--gold); color: var(--text-body);">Book a Shoot</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">KM</div>
+        <p>Photography, writing, and product design from Amsterdam.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Behance">Be</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">Work</div>
+          <a href="photography.html">Photography</a>
+          <a href="blog.html">Blog</a>
+          <a href="product.html">Product Design</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">Info</div>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KM.</span>
+      <span>Made with intention & Claude.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

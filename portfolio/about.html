@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Phampela</title>
+  <meta name="description" content="About Phampela — photographer, writer, and product designer based in India." />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>!function(){var t=localStorage.getItem("as-theme");document.documentElement.setAttribute("data-theme",t==="dark"?"dark":"")}();</script>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .timeline { margin: 3rem 0; border-left: 1px solid rgba(17,16,9,0.12); padding-left: 2rem; }
+    .timeline-item { margin-bottom: 2.5rem; position: relative; }
+    .timeline-item::before {
+      content: '';
+      position: absolute; left: -2.4rem; top: 6px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+    .timeline-year { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 0.4rem; }
+    .timeline-title { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; margin-bottom: 0.3rem; }
+    .timeline-desc { font-size: 0.85rem; color: var(--text-soft); line-height: 1.6; }
+
+    .contact-form-row { display: flex; gap: 1rem; }
+    .contact-field {
+      flex: 1; display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .contact-field label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      opacity: 0.6;
+    }
+    .contact-field input,
+    .contact-field textarea {
+      padding: 0.9rem 1.2rem;
+      border: 1px solid rgba(17,16,9,0.15);
+      border-radius: 12px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--text-body);
+      background: var(--bg-card);
+      outline: none;
+      transition: border-color 0.3s;
+      resize: vertical;
+    }
+    .contact-field input:focus,
+    .contact-field textarea:focus { border-color: var(--gold); }
+    .contact-field textarea { min-height: 120px; }
+
+    @media (max-width: 600px) {
+      .contact-form-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-logo"><a href="index.html" class="logo-mark">AS</a></div>
+    <div class="nav-links">
+      <a href="photography.html" class="nav-link">Photography</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="product.html" class="nav-link">Product Design</a>
+      <a href="about.html" class="nav-link" style="color:var(--text-body);">About</a>
+    </div>
+    <div class="nav-cta"><a href="#contact" class="btn-ghost">Let's Talk</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="photography.html">Photography</a>
+      <a href="blog.html">Blog</a>
+      <a href="product.html">Product Design</a>
+      <a href="about.html">About</a>
+      <a href="#contact" class="mobile-cta">Let's Talk</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-label section-label reveal-up delay-1">About</div>
+    <h1 class="reveal-up delay-2">Phampela —<br>made of <em>curiosity.</em></h1>
+    <p class="reveal-up delay-3">I'm a designer, photographer, and writer based in Mumbai. For eight years I've been making visual work that tries to mean something.</p>
+  </div>
+
+  <!-- ABOUT PAGE BODY -->
+  <div class="about-page">
+    <div class="about-page-inner">
+
+      <!-- LEFT: STICKY PORTRAIT -->
+      <div class="about-sticky scroll-reveal">
+        <div class="about-portrait-lg">
+          <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ap1" cx="42%" cy="32%">
+                <stop offset="0%" stop-color="#e8c090"/>
+                <stop offset="50%" stop-color="#9a5f30"/>
+                <stop offset="100%" stop-color="#1a0a04"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="520" fill="#0f0704"/>
+            <!-- Background texture -->
+            <circle cx="300" cy="80" r="100" fill="rgba(200,169,126,0.08)"/>
+            <circle cx="80" cy="400" r="80" fill="rgba(200,169,126,0.05)"/>
+            <!-- Portrait figure -->
+            <ellipse cx="200" cy="200" rx="170" ry="210" fill="url(#ap1)" opacity="0.85"/>
+            <!-- Face -->
+            <ellipse cx="200" cy="175" rx="72" ry="82" fill="#d4a070" opacity="0.9"/>
+            <!-- Neck/shoulders -->
+            <ellipse cx="200" cy="335" rx="130" ry="120" fill="#8a4820" opacity="0.75"/>
+            <!-- Highlight -->
+            <ellipse cx="168" cy="150" rx="55" ry="65" fill="rgba(255,220,170,0.14)"/>
+            <!-- Background wall texture -->
+            <line x1="0" y1="340" x2="400" y2="320" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            <!-- Name overlay at bottom -->
+            <rect x="0" y="440" width="400" height="80" fill="linear-gradient(transparent, rgba(0,0,0,0.5))"/>
+          </svg>
+        </div>
+        <p class="about-portrait-caption">Mumbai, NL — 2026</p>
+
+        <!-- Quick facts -->
+        <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+          <div style="display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border);">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); opacity: 0.5;">Based in</span>
+            <span style="font-size: 0.88rem; font-weight: 500; color: var(--text-body);">Mumbai, NL</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border);">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); opacity: 0.5;">Availability</span>
+            <span style="font-size: 0.88rem; font-weight: 500; color: #2a8a50;">Open to work</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border);">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); opacity: 0.5;">Experience</span>
+            <span style="font-size: 0.88rem; font-weight: 500; color: var(--text-body);">8 years</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid var(--border);">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); opacity: 0.5;">Languages</span>
+            <span style="font-size: 0.88rem; font-weight: 500; color: var(--text-body);">EN, NL, PT</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-soft); opacity: 0.5;">Remote</span>
+            <span style="font-size: 0.88rem; font-weight: 500; color: var(--text-body);">Yes, welcome</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTENT -->
+      <div class="about-content scroll-reveal">
+        <h2>I believe design is how <em>thought becomes visible.</em></h2>
+        <p>My practice sits at the intersection of image-making, writing, and digital product design. I came to design through photography — spending my early twenties shooting documentary work across southern Europe gave me an obsession with light, composition, and the stories that live in overlooked corners. Design followed naturally.</p>
+        <p>Over eight years working with studios, startups, and cultural institutions across Europe and beyond, I've learned that the most effective work comes from genuine curiosity. I ask a lot of questions. I read widely. I spend too much time in bookshops.</p>
+        <p>I currently take on a small number of product design and photography commissions each year. I'm also available for workshops and design mentoring through my studio practice.</p>
+
+        <!-- Skills -->
+        <h2 style="margin-top: 2.5rem; font-size: 1.8rem;">Capabilities</h2>
+        <div class="about-skills-grid">
+          <div class="skill-item">
+            <div class="skill-name">Photography</div>
+            <p class="skill-desc">Portrait, editorial, documentary. Natural & studio light. Full post-production.</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Product Design</div>
+            <p class="skill-desc">UX research, wireframing, interaction design, and high-fidelity delivery.</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Design Systems</div>
+            <p class="skill-desc">Component libraries, tokens, Figma architecture, developer handoff.</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Writing</div>
+            <p class="skill-desc">Essays, brand copy, UX writing, editorial direction.</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Brand Identity</div>
+            <p class="skill-desc">Visual identity, type direction, style guides, and art direction.</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Research & Strategy</div>
+            <p class="skill-desc">User interviews, synthesis, jobs-to-be-done, and design strategy.</p>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <h2 style="margin-top: 2.5rem; font-size: 1.8rem;">Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2025 – Present</div>
+            <div class="timeline-title">Independent Studio, Mumbai</div>
+            <p class="timeline-desc">Photography commissions, product design consultancy, and writing. Working with brands including Ace & Tate, A24 Europe, and Patagonia NL.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2022 – 2025</div>
+            <div class="timeline-title">Lead UX Designer — Frame (Mumbai)</div>
+            <p class="timeline-desc">Led design for Frame's content platform, growing the design team from 2 to 8. Built the company's first design system.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2019 – 2022</div>
+            <div class="timeline-title">Senior Designer — Fabrique (Rotterdam)</div>
+            <p class="timeline-desc">Worked across cultural institutions, civic tech, and editorial clients. Ran photography for the studio's creative projects.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2017 – 2019</div>
+            <div class="timeline-title">Designer & Photographer — Freelance</div>
+            <p class="timeline-desc">First commissions from Monocle, Wallpaper*, and local Mumbai studios while completing a master's in type design at KABK.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2014 – 2017</div>
+            <div class="timeline-title">BA Graphic Design — Gerrit Rietveld Academie</div>
+            <p class="timeline-desc">Majored in typographic systems and editorial design. Graduated with distinction.</p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-section" id="contact">
+          <div class="section-label">Contact</div>
+          <h3>Let's make something<br>worth making.</h3>
+          <p>Whether you have a brief ready or just an idea, I'm always happy to have a first conversation. I typically respond within 48 hours.</p>
+          <a href="mailto:hello@avasinclair.com" class="contact-link">hello@avasinclair.com</a>
+
+          <div style="margin-top: 3rem; background: var(--bg-raised); padding: 2.5rem; border-radius: 24px; transition: background 0.4s;">
+            <div class="section-label" style="margin-bottom: 1.5rem;">Or send a message directly</div>
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div class="contact-form-row">
+                <div class="contact-field">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Firstname Lastname"/>
+                </div>
+                <div class="contact-field">
+                  <label>Email</label>
+                  <input type="email" placeholder="you@company.com"/>
+                </div>
+              </div>
+              <div class="contact-field">
+                <label>What's the project?</label>
+                <input type="text" placeholder="e.g. Brand photography for SS26 lookbook"/>
+              </div>
+              <div class="contact-field">
+                <label>Tell me more</label>
+                <textarea placeholder="Budget range, timeline, context — anything helpful."></textarea>
+              </div>
+              <div>
+                <button class="btn-primary" onclick="alert('Thanks! (This is a static demo — connect a form service like Formspree for production)')">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Phampela</div>
+        <p>Photography, writing, and product design from Mumbai.</p>
+        <div class="footer-socials">
+          <a href="#">Ig</a><a href="#">X</a><a href="#">Be</a><a href="#">Li</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">Work</div>
+          <a href="photography.html">Photography</a>
+          <a href="blog.html">Blog</a>
+          <a href="product.html">Product Design</a>
+        </div>
+        <div class="footer-nav-col">
+          <div class="footer-nav-title">Info</div>
+          <a href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Phampela.</span>
+      <span>Made with intention.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
